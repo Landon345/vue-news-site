@@ -1,27 +1,14 @@
 <template>
-  <div class="hello">
-    <div>
-      <div v-for="article in news" :key="article">
-        <div>
-          <h3>Author</h3>
-          <p>{{ article.author }}</p>
-        </div>
-        <div>
-          <h3>Description</h3>
-          <p>{{ article.description }}</p>
-        </div>
-        <div>
-          <h3>Content</h3>
-          <p>{{ article.content }}</p>
-        </div>
-      </div>
-    </div>
+  <div id="nav">
+    <router-link to="/">Home</router-link>
+    <router-link to="/about">About</router-link>
+    <router-link to="/articles">Articles</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Navbar",
   props: {
     msg: String,
   },
@@ -47,4 +34,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+#nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+  position: sticky;
+}
+</style>
