@@ -1,7 +1,7 @@
 <template>
   <div class="bg">
     <Navbar />
-    <router-view />
+    <router-view class="main" />
   </div>
 </template>
 <script>
@@ -21,14 +21,21 @@ export default {
   color: #2c3e50;
 }
 
+.main {
+  padding-top: 100px;
+  margin: 0 7%;
+}
+@media (max-width: 900px) {
+  .main {
+    margin: 0 0%;
+  }
+}
+
 .bg {
   background-color: #eee;
   min-height: 100vh;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 .card {
   display: flex;
 

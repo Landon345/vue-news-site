@@ -80,18 +80,21 @@ p {
   cursor: pointer;
   padding: 5px 20px;
   margin: 20px 0px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 5px 2px #ccc;
+  transition-duration: 0.2s;
 }
 .read-more:hover {
-  background-color: #88ff55;
-  transition: background-color 0.2s ease-in-out;
+  color: white;
+  background-color: darkcyan;
+  transition-duration: 0.2s;
 }
 .read-more:active {
   transform: translate(1px, 1px);
 }
-.image {
-}
+
 img {
   object-fit: contain;
-  height: 250px;
+  height: 350px;
 }
 </style>

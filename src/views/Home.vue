@@ -4,13 +4,7 @@
       <h1>Search for a news article</h1>
     </header>
     <div class="search-bar-container">
-      <input
-        type="text"
-        class="search"
-        placeholder="Search..."
-        v-model="query"
-      />
-      <button class="search-button" @click="fetchNews">Search</button>
+      <input type="text" class="search" placeholder="Search..." v-model="query" />
     </div>
     <div class="found-articles">
       <div v-for="article in news" :key="article" class="card">
@@ -51,7 +45,7 @@ export default {
     }, 600),
   },
   watch: {
-    query: function() {
+    query: function () {
       this.search(this.fetchNews);
     },
   },
@@ -89,7 +83,7 @@ export default {
   padding: 5px;
   padding-left: 20px;
   font-size: 25px;
-  border-radius: 40px 0px 0px 40px;
+  border-radius: 40px;
   border: 2px solid black;
 }
 .search:focus {
