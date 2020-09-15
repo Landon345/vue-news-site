@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1 class="title">All Articles</h1>
+    <h1 class="title">Top Headlines</h1>
     <div class="articles-container">
       <div v-for="article in news" :key="article" class="card">
         <ArticleCard v-bind:article="article" />
